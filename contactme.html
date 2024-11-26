@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="pp_styles1.css" />
+    <link rel="stylesheet" href="pp_contactme.css" />
+    <title>Contact Me</title>
+  </head>
+  <body>
+    <header>
+      <div id="header_title">Leo Nguyen</div>
+      <nav class="horizontalNavigation">
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="#">My Projects</a></li>
+          <li><a href="myhobbies.html">My Hobbies</a></li>
+          <li><a href="aboutme.html">About Me</a></li>
+          <li><a href="./contactme.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <h1>Contact Me</h1>
+    <form id="contactForm" action="">
+      <label for="name">Name: </label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email: </label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="message">Message:</label>
+      <textarea name="message" id="message" rows="4" required></textarea>
+      <button id="buttonSend" type="submit">Send</button>
+    </form>
+
+    <footer>
+      <nav class="verticalNavigation">
+        <h2>Projects</h2>
+        <ul>
+          <li><a href="#">Basketball League</a></li>
+          <li><a href="#">Fashion Brand</a></li>
+          <li><a href="#">Public Charity</a></li>
+        </ul>
+      </nav>
+      <nav class="verticalNavigation">
+        <h2>Social Media</h2>
+        <ul>
+          <li>
+            <i class="fa-brands fa-twitter"></i>
+            <a href="https://x.com/">Twitter</a>
+          </li>
+          <li>
+            <i class="fa-brands fa-linkedin"></i>
+            <a href="https://www.linkedin.com">LinkedIn</a>
+          </li>
+          <li>
+            <i class="fa-brands fa-square-instagram"></i>
+            <a href="https://www.instagram.com/"
+              ><img src="fbicon.png" alt="" />Instagram</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <nav class="verticalNavigation">
+        <h2>Services</h2>
+        <ul>
+          <li><a href="#">Web Design</a></li>
+          <li><a href="#">Business Analytics</a></li>
+          <li><a href="#">Data Engineer</a></li>
+          <li><a href="#">Programming</a></li>
+        </ul>
+      </nav>
+      <section id="contactInfo">
+        <h2>My Location &amp; Contacts</h2>
+        <p>
+          <i class="fa-solid fa-location-pin"></i> Burnaby, British Columbia,
+          Canada
+        </p>
+        <p><i class="fa-solid fa-phone"></i> Toll Free: 1-800-123-1234</p>
+      </section>
+    </footer>
+    <script src="contactme.js"></script>
+  </body>
+</html>

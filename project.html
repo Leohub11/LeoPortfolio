@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="pp_styles1.css" />
+    <link rel="stylesheet" href="project.css" />
+    <title>Projects</title>
+  </head>
+  <body>
+    <header>
+      <div id="header_title">Leo Nguyen</div>
+      <nav class="horizontalNavigation">
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./project.html">My Projects</a></li>
+          <li><a href="myhobbies.html">My Hobbies</a></li>
+          <li><a href="aboutme.html">About Me</a></li>
+          <li><a href="./contactme.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="slideshow_container">
+      <div class="mySlide">
+        <img src="./img/IMG_4618.jpg" style="width: 100%" alt="" />
+      </div>
+    </div>
+    <div class="slideshow_container">
+      <div class="mySlide">
+        <img src="./img/IMG_4641 (1).jpg" style="width: 100%" alt="" />
+      </div>
+    </div>
+    <div class="slideshow_container">
+      <div class="mySlide">
+        <img src="./img/IMG_4665.jpg" style="width: 100%" alt="" />
+      </div>
+    </div>
+    <div class="slideshow_container">
+      <div class="mySlide">
+        <img src="./img/IMG_4632.jpg" style="width: 100%" alt="" />
+      </div>
+    </div>
+    <a class="prev" onclick="plusSlides(-1)"></a>
+    <a class="next" onclick="plusSlides(1)"></a>
+
+    <div style="text-align: center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+
+    <footer>
+      <nav class="verticalNavigation">
+        <h2>Projects</h2>
+        <ul>
+          <li><a href="#">Basketball League</a></li>
+          <li><a href="#">Fashion Brand</a></li>
+          <li><a href="#">Public Charity</a></li>
+        </ul>
+      </nav>
+      <nav class="verticalNavigation">
+        <h2>Social Media</h2>
+        <ul>
+          <li>
+            <i class="fa-brands fa-twitter"></i>
+            <a href="https://x.com/">Twitter</a>
+          </li>
+          <li>
+            <i class="fa-brands fa-linkedin"></i>
+            <a href="https://www.linkedin.com">LinkedIn</a>
+          </li>
+          <li>
+            <i class="fa-brands fa-square-instagram"></i>
+            <a href="https://www.instagram.com/"
+              ><img src="fbicon.png" alt="" />Instagram</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <nav class="verticalNavigation">
+        <h2>Services</h2>
+        <ul>
+          <li><a href="#">Web Design</a></li>
+          <li><a href="#">Business Analytics</a></li>
+          <li><a href="#">Data Engineer</a></li>
+          <li><a href="#">Programming</a></li>
+        </ul>
+      </nav>
+      <section id="contactInfo">
+        <h2>My Location &amp; Contacts</h2>
+        <p>
+          <i class="fa-solid fa-location-pin"></i> Burnaby, British Columbia,
+          Canada
+        </p>
+        <p><i class="fa-solid fa-phone"></i> Toll Free: 1-800-123-1234</p>
+      </section>
+    </footer>
+    <script src="project.js"></script>
+  </body>
+</html>

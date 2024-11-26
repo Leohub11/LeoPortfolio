@@ -1,0 +1,163 @@
+@charset "utf-8";
+
+/* @font-face {
+  font-family: Champagne;
+  src: url(cac_champagne.woff) format("woff"),
+    url(cac_champagne.ttf) format("ttf");
+} */
+
+html {
+  background-color: darkgray;
+  font-family: Verdana, Geneva, Arial, sans-serif;
+}
+
+body {
+  background-color: #2186ed;
+  background-image: linear-gradient(62deg, #2186ed 0%, #fff6be 100%);
+  font-family: "Mona Sans", "Mona Sans Header Fallback", -apple-system,
+    BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+#header_title {
+  text-align: center;
+  font-size: 2em;
+  color: whitesmoke;
+  text-shadow: 5px 5px 5px 003f63;
+  padding: 50px 10px;
+  background-image: url(./img/background.PNG);
+  background-size: cover;
+  opacity: 80%;
+}
+
+nav.horizontalNavigation {
+  width: 100%;
+  overflow: hidden;
+}
+nav.horizontalNavigation ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+nav.horizontalNavigation li {
+  width: 20%;
+  float: left;
+  font-size: 0.8em;
+  text-align: center;
+}
+
+.horizontalNavigation a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+}
+nav.horizontalNavigation a {
+  background-color: #003f66;
+  /* font-family: Champagne, cursive; */
+  font-size: 1.4em;
+  line-height: 2em;
+}
+
+nav.horizontalNavigation a:link,
+nav.horizontalNavigation a:visited {
+  color: whitesmoke;
+  text-align: center;
+}
+
+nav.horizontalNavigation a:hover,
+nav.horizontalNavigation a:active {
+  background-color: #353d40;
+}
+
+/* Left Column Paragraph Styles */
+
+section#leftColumn p {
+  color: #003f63;
+  font-size: 0.9em;
+  line-height: 1.6em;
+}
+
+/* Footer Styles */
+
+body > footer {
+  font-size: 0.9em;
+  color: whitesmoke;
+}
+
+body > footer h2 {
+  color: whitesmoke;
+  font-size: 1.1em;
+  font-weight: bold;
+  letter-spacing: 0.2em;
+  margin: 1em 2em;
+}
+
+/* Vertical Navigation Styles */
+
+nav.verticalNavigation ul {
+  margin: 0;
+  line-height: 2em;
+}
+
+nav.verticalNavigation a:link,
+nav.verticalNavigation a:visited {
+  color: whitesmoke;
+}
+
+nav.verticalNavigation a:hover,
+nav.verticalNavigation a:active {
+  text-decoration: underline;
+}
+
+/* Contact Info Styles */
+
+section#contactInfo p {
+  line-height: 1.4em;
+  margin: 1em;
+  color: whitesmoke;
+}
+.horizontalNavigation ul {
+  list-style: none;
+}
+.verticalNavigation ul {
+  list-style: none;
+}
+nav.horizontalNavigation a {
+  background-color: #003f63;
+  font-size: 1.4em;
+  line-height: 1.8em;
+  text-align: center;
+}
+nav.verticalNavigation h1 {
+  color: whitesmoke;
+}
+section#contactInfo h1 {
+  color: whitesmoke;
+}
+
+footer {
+  clear: left;
+  background-color: #003f63;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1.5fr; /* 1 cột nhỏ và 1 cột lớn */
+  align-items: center;
+}
+
+.verticalNavigation {
+  height: 220px;
+  padding-top: 10px;
+}
+.verticalNavigation h2 {
+  padding-left: 10px;
+}
+* {
+  box-sizing: border-box;
+}
+#contactInfo {
+  height: 220px;
+  padding-top: 10px;
+}
+#contactInfo p {
+  padding-left: 20px;
+}

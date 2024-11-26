@@ -1,0 +1,149 @@
+@charset "utf-8";
+
+/* Body Styles */
+
+body {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 960px;
+  min-width: 640px;
+  width: 95%;
+}
+
+/* Horizontal Navigation Styles */
+nav.horizontalNavigation {
+  width: 100%;
+  overflow: hidden;
+}
+nav.horizontalNavigation ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+nav.horizontalNavigation li {
+  width: 20%;
+  float: left;
+  font-size: 0.8em;
+  text-align: center;
+}
+
+.horizontalNavigation a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Left Column Styles */
+
+#leftColumn {
+  clear: left;
+  float: left;
+  width: 33%;
+}
+
+h1 {
+  color: #003f63;
+  text-align: center;
+}
+#leftColumn img {
+  display: relative;
+  max-width: 100%;
+}
+
+/* Right Column Styles */
+#rightColumn {
+  float: left;
+  width: 67%;
+}
+#rightColumn .photo {
+  display: block;
+  max-width: 100%;
+}
+
+.horizontalNavigation img {
+  display: block;
+  width: 100%;
+}
+
+#rightColumn > nav.horizontalNavigation li {
+  width: 25%;
+}
+
+/* Footer Styles */
+
+/* footer {
+  background-color: #003f63;
+  clear: left;
+}
+
+footer::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+footer > nav.verticalNavigation {
+  float: left;
+  width: 22%;
+}
+
+footer > section#contactInfo {
+  float: left;
+  width: 34%;
+} */
+
+#header_title {
+  text-align: center;
+  font-size: 2em;
+  color: whitesmoke;
+  text-shadow: 5px 5px 5px 003f63;
+  padding: 50px 10px;
+  background-image: url(./img/background.PNG);
+  background-size: cover;
+  opacity: 80%;
+}
+* {
+  box-sizing: border-box;
+}
+#leftColumn p {
+  padding: 20px;
+}
+
+@media (max-width: 900px) {
+  section#main {
+    padding: 1em;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "photo"
+      "descript";
+    grid-gap: 10px;
+    /* border: 1px dashed rgb(153, 255, 0); */
+  }
+
+  section#main .image {
+    grid-area: photo;
+    font-size: 5em;
+    text-align: center;
+
+    /* border: 1px dashed red; */
+  }
+
+  section#main .logo {
+    display: none;
+  }
+
+  section#main .description {
+    grid-area: description;
+    /* border: 1px dashed red; */
+    background-color: bisque;
+    padding: 1em;
+
+    p {
+      line-height: 1.5;
+      /* Increases the space between lines to 1.5 times the font size */
+    }
+  }
+}
